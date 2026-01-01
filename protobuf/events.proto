@@ -1,0 +1,15 @@
+syntax = "proto3";
+package clickstream;
+
+message events {
+  string ip = 1;
+  int32 userid = 2;
+  string remote_user = 3;
+  string time = 4;
+  int64 _time = 5;
+  string request = 6;
+  string status = 7;
+  string bytes = 8;
+  string referrer = 9;
+  string agent = 10;
+}
